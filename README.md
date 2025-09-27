@@ -50,7 +50,9 @@ The script will generate a plot named avg_time_vs_tellers.png in the output/ dir
 </p>
 
 <p>
+            
 ## 3. Analysis of Results
+            
 Based on simulation theory and the results from this program, we can draw the following conclusions about the performance of a single queue versus multiple queues per teller.
 
 Single Queue (Common Line)
@@ -74,6 +76,8 @@ For optimizing bank performance metrics—specifically minimizing average custom
 
 </p>
 <p>
+
+            
 ## 4. Test Cases
 
 
