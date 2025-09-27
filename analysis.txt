@@ -1,0 +1,24 @@
+Analysis of Queueing Regimes
+
+Based on simulation theory and the results from this program, we can draw the following conclusions about the performance of a single queue versus multiple queues per teller.
+
+### Single Queue (Common Line)
+
+**Advantages:**
+1.  **Fairness and Reduced Wait Time Variance:** A single queue is inherently fairer. No customer gets "stuck" in a slow line while another line moves quickly. This pooling of resources leads to a lower standard deviation in wait times.
+2.  **Higher Efficiency / Lower Average Wait Time:** The single queue model is generally more efficient. Tellers are never idle as long as there is at least one person in the queue. In the multiple-queue model, one teller could be idle while customers are waiting in other lines. This leads to better teller utilization and a lower overall average wait time for customers. This is the most significant advantage.
+
+**Disadvantages:**
+1.  **Physical Space:** A single long line can be physically difficult to manage in a real-world bank lobby.
+
+### Multiple Queues (One Per Teller)
+
+**Advantages:**
+1.  **Perceived psychological benefit:** Customers may feel they have more control by choosing a line, even if it's not optimal. The lines are also physically shorter and may seem less daunting.
+
+**Disadvantages:**
+1.  **Inefficiency and "Bad Luck":** This system is susceptible to "unlucky" choices. A customer might choose a line that ends up being very slow due to a few customers ahead requiring unusually long service times. This increases both the average wait time and the variance (unfairness) compared to the single-queue system. The simulation's "teller stealing" feature mitigates this but doesn't eliminate the fundamental inefficiency.
+
+### Conclusion
+
+For optimizing bank performance metrics—specifically minimizing average customer wait time and ensuring fairness—**the single queue system is demonstrably superior.** The ability to pool all waiting customers for all available tellers ensures that service capacity is always used when there is demand. The multiple-queue system introduces idle teller time and variance in service, making it less efficient from a purely mathematical standpoint. The only reasons to implement multiple queues are typically related to physical space constraints or perceived customer psychology rather than system performance.
